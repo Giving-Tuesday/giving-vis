@@ -14,7 +14,10 @@ export function useChartData(filters: Filters) {
   return useQuery({
     queryKey: ['chart-data', filters],
     queryFn: async (): Promise<DataPoint[]> => {
-      await loadParquet('/data_clean.parquet', 'my_data');
+      await loadParquet(
+        `${import.meta.env.BASE_URL}data_clean.parquet`,
+        'my_data',
+      );
 
       const rows = await query<{
         collection_week: string | Date;
