@@ -13,11 +13,14 @@
     "@duckdb/duckdb-wasm": "^1.33.1-dev45.0",
     "@nivo/core": "^0.99.0",
     "@nivo/line": "^0.99.0",
+    "@tanstack/react-query": "^5.100.14",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.16.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@tanstack/react-query-devtools": "^5.100.14",
     "@types/node": "^24.12.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
